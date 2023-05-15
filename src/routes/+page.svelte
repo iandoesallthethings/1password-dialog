@@ -56,7 +56,9 @@
 	</h2>
 
 	<p>
-		This renders the the dialog inside the <code>#top-layer</code> section, which bypasses z-index entirely.
+		This renders the the dialog inside the <code>#top-layer</code> section, which bypasses z-index
+		entirely. As a result, the autofill dropdown renders behind the modal and
+		<code>::backdrop</code>, making it impossible to use.
 	</p>
 
 	<button on:click={openModal}>Open dialog as modal</button>
